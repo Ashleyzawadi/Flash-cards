@@ -29,8 +29,8 @@ class Flashcard(models.Model):
     notes = models.TextField()
     profile = models.ForeignKey(Profile, null=True)
     image = models.ImageField(upload_to='images/', null=True)
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_add=True, null=True)
+    time_created = models.DateTimeField(auto_now_add=True)
+    time_updated = models.DateTimeField(auto_add=True)
 
     def save_flashcard(self):
         self.save()
