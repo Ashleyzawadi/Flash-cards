@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 
 class Profile(models.Model):
     name = models.CharField(max_length=30)
-    user = models.OneToOneField(User, on_delete=models.CASCADE(), related_name='user')
+    user = models.OneToOneField(User, related_name='user')
 
     def save_profile(self):
         self.save()
