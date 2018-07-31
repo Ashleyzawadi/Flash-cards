@@ -30,7 +30,7 @@ class Flashcard(models.Model):
     profile = models.ForeignKey(Profile, null=True)
     image = models.ImageField(upload_to='images/', null=True)
     time_created = models.DateTimeField(auto_now_add=True)
-    time_updated = models.DateTimeField(auto_add=True)
+    time_updated = models.DateTimeField(auto_now=True)
 
     def save_flashcard(self):
         self.save()
