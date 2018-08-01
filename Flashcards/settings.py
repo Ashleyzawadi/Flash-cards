@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap4',
     'bootstrap3',
-    'cards.apps.CardsConfig',
+    'cards',
 ]
 
 MIDDLEWARE = [

@@ -13,6 +13,8 @@ def index(request):
 
     return render(request, 'index.html', args)
 
-def flashcard(request, pk):
-    flashcard = Flashcard.objects.get(pk=pk)
+def flashcard(request, flashcard_id):
+    flashcard = Flashcard.objects.get(pk=flashcard_id)
+    
+    args = {'flashcard': flashcard}
     return render(request, 'flashcard.html', args)
