@@ -84,3 +84,8 @@ class Course(models.Model):
     def update_course(cls, id, course, update):
         new_course = cls.objects.filter(id=id).update(course=update)
         return new_course
+
+
+class RegistrationReiepient(models.Model):
+    name = models.CharField(max_length=30)
+    email = models.EmailField()
