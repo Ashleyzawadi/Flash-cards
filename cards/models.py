@@ -16,7 +16,7 @@ class Profile(models.Model):
         self.delete()
 
     def __str__(self):
-        return self.user
+        return self.name
 
     @classmethod
     def update_profile(cls, id, profile, update):
@@ -60,6 +60,7 @@ class Flashcard(models.Model):
 class Course(models.Model):
     title = models.CharField(max_length=70)
     profile = models.ForeignKey(Profile, null=True)
+    flashcards = models.ForeignKey(Flashcard, default='')
 
     def save_course(self):
         self.save()

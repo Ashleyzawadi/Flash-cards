@@ -1,0 +1,8 @@
+{%block content%}
+{%for flashcard in flashcards%}
+    <h2>{{flashcard.title}}</h2>
+    <h4>{{flashcard.notes}}</h4>
+    <h5>Created on: {{flashcard.time_created}}</h5>
+    <h5>Updated on: {{flashcard.time_updated}}</h5>
+    {%endfor%}
+{%endblock%}

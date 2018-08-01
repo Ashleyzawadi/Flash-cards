@@ -82,7 +82,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'flashcards',
-        'USER': 'paulette',
+        'USER': 'ashley',
         'PASSWORD': '1234',
 
     }
