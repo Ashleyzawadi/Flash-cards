@@ -1,0 +1,43 @@
+body{
+	background-color: #fafafa!important;
+	margin-top: 30px;
+}
+.loginform{
+  background-color: white;
+  max-width: 325px;
+  float: left;
+  max-height: 473px;
+  position: absolute;
+  border: solid 1px #ddd;
+  display: inline-table;
+  top: 0;
+  bottom: 0;
+  padding: 20px;
+  left: 0;
+  right: 0;
+  padding-bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+small{
+    display: none!important;
+}
+label{
+    display: none!important;
+}
+.invite{
+    margin: 0 40px 30px;
+    color: #999;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0;
+    border: 0;
+    margin-top: 0;
+}
+.alert{
+    display: none;
+}
+.toobig{
+  font-size: 22px;
+  margin: 0 4px 30px;
+}
