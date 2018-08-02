@@ -1,0 +1,28 @@
+{%extends 'base.html'%}
+{% load static %}
+{% block content %} 
+{{ block.super}}
+
+<div class="container">
+    {%for course in courses%}
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title"><a href="#">{{course.title}}</a></h5>
+            <p class="card-text"><a href="#">{{course.flashcards}}</a></p>
+            <a href="{% url 'theflash' flashcard_id=course.id%}" class="btn btn-primary">{{course.title}}</a>
+        </div>
+    </div>
+    
+    
+    <!-- <a href="#">{{course.title}}</a>
+    <a href="#">{{course.flashcards}}</a> -->
+    {%endfor%}
+
+    
+
+    
+    
+
+    </div>
+{% endblock %}
