@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap4',
     'bootstrap3',
-    'cards.apps.CardsConfig',
+    'cards',
 ]
 
 MIDDLEWARE = [
@@ -84,8 +84,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'flashcards',
-        'USER': 'paulette',
-        'PASSWORD': '1234',
+        'USER': 'xv',
+        'PASSWORD': 'greatkali',
 
     }
 }
